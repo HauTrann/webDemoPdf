@@ -1,0 +1,1 @@
+{"id":0,"MaHoSo":"ABC","HoVaTen":"Tran Van Hau","NgaySinh":"24/05/1997","CMND":"163363955","DienThoai":"123456789","Email":"hvt@gmail.com","ViTriDuTuyen":"ViTriDuTuyen","DonViDuTuyen":"DonViDuTuyen","NgayHenNopHoSo":"17-10-2020"}

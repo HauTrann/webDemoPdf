@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Report";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+<button id="getRepot" onclick="getRepot(1, 'DANG_KY_DU_TUYEN')">Get report</button>
+<button id="getRepot" onclick="getRepot(2, 'PHIEU_HEN')">Phieu hen</button>
+<a id="getRepot" href="api/report/1">Get report</a>
+
+
+<script type="text/javascript">
+    function base64ToArrayBuffer(base64) {
+        var binaryString = window.atob(base64);
+        var binaryLen = binaryString.length;
+        var bytes = new Uint8Array(binaryLen);
+        for (var i = 0; i < binaryLen; i++) {
+            var ascii = binaryString.charCodeAt(i);
+            bytes[i] = ascii;
+        }
+        return bytes;
+    }
+    function saveByteArray(pdfName, byte) {
+        var blob = new Blob([byte], { type: "application/pdf" });
+        var link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        var fileName = pdfName + ".pdf";
+        link.download = fileName;
+        link.click();
+    };
+    function getRepot(id, type) {
+        var link = 'https://localhost:44343/api/report/' + id + "/" + type;
+        window.open(link, '_blank');
+        //$.ajax({
+        //    url: 'https://localhost:44343/api/report/' + id,
+        //    //contentType: "application/pdf; charset=utf-8",
+        //    //xhr: function () {
+        //    //    var xhr = new XMLHttpRequest();
+        //    //    xhr.responseType = 'blob'
+        //    //    return xhr;
+        //    //},
+        //    xhrFields: {
+        //        responseType: 'blob'
+        //    },
+        //    success: function (data) {
+        //        var blob = new Blob([data.content]);
+        //        var link = document.createElement('a');
+        //        link.href = window.URL.createObjectURL(blob);
+        //        link.click();
+
+        //        //var bytes = base64ToArrayBuffer(data);
+        //        //saveByteArray("Dossier_" + new Date(), bytes);
+        //    },
+        //    error: function (errormessage) {
+        //        alert(errormessage.responseText);
+        //    }
+        //});
+    };
+</script>

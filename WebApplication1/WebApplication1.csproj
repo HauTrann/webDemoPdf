@@ -1,0 +1,142 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="SharpShooter.Reports.Web.ASP.NET.Web" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PerpetuumSoft.Framework">
+      <HintPath>F:\HT\ea_master\04_Code\Accounting_V3\Lib\PerpetuumSoft.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PerpetuumSoft.Reporting">
+      <HintPath>F:\HT\ea_master\04_Code\Accounting_V3\Lib\PerpetuumSoft.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="PerpetuumSoft.Reporting.Export.Excel">
+      <HintPath>F:\HT\ea_master\04_Code\Accounting_V3\Lib\PerpetuumSoft.Reporting.Export.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PerpetuumSoft.Reporting.Export.ExcelXml">
+      <HintPath>F:\HT\ea_master\04_Code\Accounting_V3\Lib\PerpetuumSoft.Reporting.Export.ExcelXml.dll</HintPath>
+    </Reference>
+    <Reference Include="PerpetuumSoft.Reporting.Export.Html">
+      <HintPath>F:\HT\ea_master\04_Code\Accounting_V3\Lib\PerpetuumSoft.Reporting.Export.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="PerpetuumSoft.Reporting.Export.Pdf">
+      <HintPath>F:\HT\ea_master\04_Code\Accounting_V3\Lib\PerpetuumSoft.Reporting.Export.Pdf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\App.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\App.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\ComponentFactory.Krypton.Docking.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\ComponentFactory.Krypton.Navigator.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\ComponentFactory.Krypton.Ribbon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\ComponentFactory.Krypton.Toolkit.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\ComponentFactory.Krypton.Workspace.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\itextsharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\Newtonsoft.Json.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Charts.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Charts.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Framework.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Framework.Export.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Framework.Export.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Framework.Model.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Framework.Model.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Instrumentation.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Instrumentation.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Reporting.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Reporting.Export.Excel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Reporting.Export.ExcelXml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Reporting.Export.Html.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Reporting.Export.Pdf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Writers.Excel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Writers.Flash.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\PerpetuumSoft.Writers.Svg.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\report\DangKyDuTuyen - Copy.rst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\report\DangKyDuTuyen.rst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="pdf\report\PhieuHen.rst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="report\DangKyDuTuyen - Copy.rst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="report\DangKyDuTuyen.rst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="report\MCReceipt-A4.rst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="report\PhieuHen.rst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
